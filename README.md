@@ -96,17 +96,10 @@ The application will be available at `http://127.0.0.1:8000/`.
 
 ## 🚀Preview
 
-<p align="center">
     ![Screenshot 2025-02-14 195150](https://github.com/user-attachments/assets/edacba45-bb67-43de-ab6f-27baf3fe6be9)
-</p>
 
-<p align="center">
     ![Screenshot 2025-02-14 195254](https://github.com/user-attachments/assets/df900444-a010-41b3-8a74-e31ba3cf2163)
     ![Screenshot 2025-02-14 205540](https://github.com/user-attachments/assets/c2db9866-139e-45a2-b842-2410ffc9278d)
-</p>
 
-<p align="center">
     ![image](https://github.com/user-attachments/assets/476966c5-79a1-4f0e-b109-cda274606fab)
     ![Screenshot 2025-02-14 205733](https://github.com/user-attachments/assets/08a3ce59-b494-4b8c-9155-4efb52da45c0)
-</p>
-
