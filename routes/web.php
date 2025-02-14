@@ -1,13 +1,12 @@
-<?php
 
+<?php
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CaptchaController;
+use App\Http\Controllers\QRCodeController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [QRCodeController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -19,11 +18,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
-
 Route::get('/captcha-image', [CaptchaController::class, 'getCaptchaImage'])->name('captcha.image');
 
+Route::post('/submit-form', [FormController::class, 'store'])->middleware('xss');
+Route::get('/form', [FormController::class, 'index'])->name('form.index');
 
-// Route::get('/captcha', [CaptchaController::class, 'generateCaptcha'])->name('captcha.generate');
-// Route::post('/validate-captcha', [CaptchaController::class, 'validateCaptcha'])->name('captcha.validate');
+require __DIR__.'/auth.php';
 
